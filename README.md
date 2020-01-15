@@ -4,7 +4,9 @@ SparkSession เป็น จุดเริ่มจ้นของการใ
 DataSet และ DataFrame เป็น APIs ที่ Spark สร้างมาให้เราใช้งาน
 
 import Spark Session โดยเริ่มต้นต้อง import ตามนี้
+
 from pyspark.sql import SparkSession
+
 from pyspark.sql import SQLContext
 
 หลังจากนั้น เราต้องสร้าง Spark Application ของเราด้วยคำสั่ง
