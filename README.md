@@ -1,5 +1,5 @@
 # pyspark
-
+https://towardsdatascience.com/create-your-first-etl-pipeline-in-apache-spark-and-python-ec3d12e2c169
 SparkSession เป็น จุดเริ่มจ้นของการใช้งาน PySpark application ทำให้เราสามารถใช้งาน DataSet และ DataFrame ได้
 DataSet และ DataFrame เป็น APIs ที่ Spark สร้างมาให้เราใช้งาน
 
@@ -17,5 +17,8 @@ scSpark = SparkSession.builder.appName("reading csv").getOrCreate()
 
 ** spark context vs spark session https://www.quora.com/What-is-the-difference-between-spark-context-and-spark-session
 
+
+## Print the tables in the catalog
+print(scSpark.catalog.listTables())
 
 

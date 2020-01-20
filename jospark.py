@@ -4,7 +4,7 @@ from pyspark.sql import SQLContext
 if __name__ == '__main__':
     scSpark = SparkSession.builder.appName("reading csv").getOrCreate()
     # data_file = 'data*.csv'
-    data_file = 'supermaket.csv'
+    data_file = '/Users/macbookpro/Desktop/learning/python/pyspark/supermaket.csv'
     sdfData = scSpark.read.csv(data_file, header=True, sep=",").cache()
     print('Total Records = {}'.format(sdfData.count()))
     sdfData.show()
